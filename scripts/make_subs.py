@@ -67,6 +67,15 @@ def transcribe_words(audio):
         sys.exit("자막 엔진이 없습니다 — mlx-whisper(맥) 또는 faster-whisper(윈도우)를 설치하세요.")
 
     # GPU가 있으면 쓰고, 없으면 CPU int8 (윈도우 노트북 기준 실사용 가능한 속도)
+    def _run(dev, comp):
+        model = WhisperModel("turbo", device=dev, compute_type=comp)
+        segments, _ = model.transcribe(audio, language="ko", word_timestamps=True)
+        out = []
+        for seg in segments:          # CUDA 라이브러리는 이 소비 시점에 로드된다
+            for w in (seg.words or []):
+                out.append({"t": w.word.strip(), "s": w.start, "e": w.end})
+        return out
+
     device, compute = "cpu", "int8"
     try:
         import ctranslate2
@@ -75,13 +84,17 @@ def transcribe_words(audio):
     except Exception:
         pass
     print(f"[자막] faster-whisper ({device}/{compute})", file=sys.stderr)
-    model = WhisperModel("turbo", device=device, compute_type=compute)
-    segments, _ = model.transcribe(audio, language="ko", word_timestamps=True)
-    out = []
-    for seg in segments:
-        for w in (seg.words or []):
-            out.append({"t": w.word.strip(), "s": w.start, "e": w.end})
-    return out
+
+    # 윈도우는 PyPI torch가 CPU 전용이라 CUDA 런타임 DLL(cublas 등)이 없다.
+    # 그런데 ctranslate2는 드라이버만 보고 GPU를 세므로 여기까지 와서 터진다 → CPU로 되돌린다.
+    try:
+        return _run(device, compute)
+    except Exception as e:
+        if device != "cuda":
+            raise
+        print(f"[자막] CUDA 실패({type(e).__name__}: {e}) → CPU/int8로 재시도",
+              file=sys.stderr)
+        return _run("cpu", "int8")
 
 
 def audio_duration(path):
