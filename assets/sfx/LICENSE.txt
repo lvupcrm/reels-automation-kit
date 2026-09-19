@@ -1,0 +1,12 @@
+릴스 효과음 — 구성과 라이선스
+갱신: 2026-09-19 (v2.0 공개판)
+
+■ sfx/*.wav 7종 (whoosh_in · whoosh_out · pop · tick · impact · riser · ding)
+  자체 합성. ffmpeg로 노이즈·사인파에 엔벨로프를 씌워 생성 — 원저작자 없음, 라이선스 대상 아님.
+  레시피: scripts/make_sfx.sh
+
+■ sfx/cc0/<역할>/ 208종
+  CC0 1.0. 파일명 접두사로 출처 구분 — k_ = Kenney(www.kenney.nl) · o_ = OpenGameArt(CC0 필터) · s_ = 위 합성본 사본.
+  항목별 출처·작성자·확인일은 cc0/LICENSE.txt.
+
+이 폴더의 모든 파일은 위 두 부류 중 하나다. 출처를 적을 수 없는 파일은 넣지 않는다.

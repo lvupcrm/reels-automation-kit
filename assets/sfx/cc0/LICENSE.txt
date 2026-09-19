@@ -1,0 +1,86 @@
+릴스 효과음 CC0 라이브러리 — 출처·라이선스 근거
+확인일: 2026-08-23 · 전 파일 48kHz 모노 / 피크 -3 dBFS 정규화
+파일명 접두사: s_=자체 합성  k_=Kenney  o_=OpenGameArt
+
+═══ s_ · 자체 합성 ═══
+ffmpeg로 노이즈·사인파에 엔벨로프를 씌워 생성. 원저작자 없음 — 라이선스 대상 아님.
+레시피: scripts/make_sfx.sh
+
+═══ k_ · Kenney (www.kenney.nl) ═══
+팩: Interface Sounds / Impact Sounds / Digital Audio / UI Audio /
+    Casino Audio / Sci-fi Sounds / RPG Audio / Music Jingles
+라이선스: Creative Commons Zero (CC0 1.0)
+팩 동봉 License.txt 원문:
+  "This content is free to use in personal, educational and commercial projects.
+   Support us by crediting Kenney or www.kenney.nl (this is not mandatory)"
+
+═══ o_ · OpenGameArt (opengameart.org) ═══
+수집 조건: art_type=Sound Effect(13) + license=CC0(4) 필터, 항목 페이지의
+라이선스 필드에 CC0가 실제로 있는지 재확인한 것만 수집(scripts 외부: harvest.py).
+채택된 항목:
+  - 10-8bit-coin-sounds  (lukerustltd)  https://opengameart.org/content/10-8bit-coin-sounds
+  - 18-random-video-game-sound-effects  (bart)  https://opengameart.org/content/18-random-video-game-sound-effects
+  - 3-melee-sounds  (remaxim)  https://opengameart.org/content/3-melee-sounds
+  - 4-space-portal-sounds  (rockseller)  https://opengameart.org/content/4-space-portal-sounds
+  - alien-sounds  (qubodup)  https://opengameart.org/content/alien-sounds
+  - battle-sound-effects  (ogrebane)  https://opengameart.org/content/battle-sound-effects
+  - bombexplosion8bit  (lukerustltd)  https://opengameart.org/content/bombexplosion8bit
+  - click  (qubodup)  https://opengameart.org/content/click
+  - click-sounds6  (pauliuw)  https://opengameart.org/content/click-sounds6
+  - dark-ambiences  (ogrebane)  https://opengameart.org/content/dark-ambiences
+  - do-you-remember-laughter  (supergeek)  https://opengameart.org/content/do-you-remember-laughter
+  - dog-grunt  (qubodup)  https://opengameart.org/content/dog-grunt
+  - doorbell-ring  (qubodup)  https://opengameart.org/content/doorbell-ring
+  - dripping-water-loop  (qubodup)  https://opengameart.org/content/dripping-water-loop
+  - electronic-device-loop  (qubodup)  https://opengameart.org/content/electronic-device-loop
+  - equipment-click  (lfa)  https://opengameart.org/content/equipment-click
+  - equipment-clicks-ii  (lfa)  https://opengameart.org/content/equipment-clicks-ii
+  - evil-laughter  (qubodup)  https://opengameart.org/content/evil-laughter
+  - explosion-somewhere-far  (pauliuw)  https://opengameart.org/content/explosion-somewhere-far
+  - ghost  (ogrebane)  https://opengameart.org/content/ghost
+  - ghost-breath  (qubodup)  https://opengameart.org/content/ghost-breath
+  - girly-scream  (ferk)  https://opengameart.org/content/girly-scream
+  - goblins-sound-pack  (artisticdude)  https://opengameart.org/content/goblins-sound-pack
+  - growl  (sindwiller)  https://opengameart.org/content/growl
+  - grunts-male-death-and-pain  (thebardofblasphemy)  https://opengameart.org/content/grunts-male-death-and-pain
+  - gunshot-sounds  (tabasco)  https://opengameart.org/content/gunshot-sounds
+  - heartbeat-single-sound  (qubodup)  https://opengameart.org/content/heartbeat-single-sound
+  - heartbeat-sounds  (bart)  https://opengameart.org/content/heartbeat-sounds
+  - high-pitch-scream-sounds2  (pauliuw)  https://opengameart.org/content/high-pitch-scream-sounds2
+  - ice-spells  (bart)  https://opengameart.org/content/ice-spells
+  - insect-or-alien-scream  (qubodup)  https://opengameart.org/content/insect-or-alien-scream
+  - interface-beeps  (bart)  https://opengameart.org/content/interface-beeps
+  - miscmenu-sci-fi-sounds  (haeldb)  https://opengameart.org/content/miscmenu-sci-fi-sounds
+  - monster-sound-effects-2  (ogrebane)  https://opengameart.org/content/monster-sound-effects-2
+  - monster-sound-effects-pack  (ogrebane)  https://opengameart.org/content/monster-sound-effects-pack
+  - monster-sound-pack-volume-1  (ogrebane)  https://opengameart.org/content/monster-sound-pack-volume-1
+  - mouse-click  (lfa)  https://opengameart.org/content/mouse-click
+  - numbers-one-million  (rfc1394)  https://opengameart.org/content/numbers-one-million
+  - old-school-skill-sound  (pauliuw)  https://opengameart.org/content/old-school-skill-sound
+  - osare-minotaur-sounds  (haeldb)  https://opengameart.org/content/osare-minotaur-sounds
+  - random-sound-effects  (haeldb)  https://opengameart.org/content/random-sound-effects
+  - random-sounds-samples  (haeldb)  https://opengameart.org/content/random-sounds-samples
+  - retro-deaddestroyeddamaged-sound  (prinsu-kun)  https://opengameart.org/content/retro-deaddestroyeddamaged-sound
+  - rocket-fly-8-bit  (person)  https://opengameart.org/content/rocket-fly-8-bit
+  - sci-fi-vehicle-sound  (ogrebane)  https://opengameart.org/content/sci-fi-vehicle-sound
+  - short-wind-sound  (remaxim)  https://opengameart.org/content/short-wind-sound
+  - silent-beast-growls4  (pauliuw)  https://opengameart.org/content/silent-beast-growls4
+  - sinister-laugh  (weaponguy)  https://opengameart.org/content/sinister-laugh
+  - skill-hit  (pauliuw)  https://opengameart.org/content/skill-hit
+  - small-pest-aliencreature  (haeldb)  https://opengameart.org/content/small-pest-aliencreature
+  - so-thats-coming-along  (bart)  https://opengameart.org/content/so-thats-coming-along
+  - space-laser  (bart)  https://opengameart.org/content/space-laser
+  - space-ship-shield-sounds  (bart)  https://opengameart.org/content/space-ship-shield-sounds
+  - spell-sounds  (haeldb)  https://opengameart.org/content/spell-sounds
+  - swishes-sound-pack  (artisticdude)  https://opengameart.org/content/swishes-sound-pack
+  - synthesized-explosion  (qubodup)  https://opengameart.org/content/synthesized-explosion
+  - teleport-spell  (ogrebane)  https://opengameart.org/content/teleport-spell
+  - upside-down-grin-freaky-ambient  (haeldb)  https://opengameart.org/content/upside-down-grin-freaky-ambient
+  - warp-engine-engage-sound  (bart)  https://opengameart.org/content/warp-engine-engage-sound
+  - wind-hit-time-morph  (qubodup)  https://opengameart.org/content/wind-hit-time-morph
+  - wind1  (lukerustltd)  https://opengameart.org/content/wind1
+  - zombies-sound-pack  (artisticdude)  https://opengameart.org/content/zombies-sound-pack
+
+※ 반입 금지: myinstants(noncommercial 한정·다운로드 금지) ·
+   macOS 시스템 사운드(Apple 소유) · BBC 효과음 라이브러리(개인/교육/연구 한정) ·
+   Sonniss GDC 번들(라이선스 원문 미확인 — 확인 전 사용 금지)

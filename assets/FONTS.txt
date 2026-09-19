@@ -1,0 +1,83 @@
+릴스 폰트 — 출처·라이선스 근거
+확인일: 2026-08-23 · 확인 방법: 폰트 파일의 name 테이블 직접 판독(ttx -t name)
+
+═══ 기본 폰트 ═══
+
+Gasoek One (가석원체)  — assets/fonts/제목·자막/gasoekone.ttf
+  타이틀·자막의 기본값. OFL — 상업 이용·영상 사용·재배포 모두 가능.
+
+⚠️ Black Han Sans(검은고딕)를 타이포·커버 기본으로 쓰지 말 것 (2026-08-25 실사고):
+  "아" 등 일부 글리프가 Pillow(FreeType stroker) 외곽선 렌더와 충돌해
+  ㅏ획 외곽선이 통째로 빠진다. 자막(libass)은 정상 — 타이포·커버 스크립트만 문제.
+  동봉은 유지하되 스크립트 기본값에서 제외.
+
+※ 여기어때 잘난체는 저작권 정책상 이 패키지에 동봉하지 않는다.
+  공식 배포처(https://gccompany.co.kr/font)에서 직접 내려받아
+  assets/fonts/제목·자막/ 에 넣으면 스크립트가 최우선으로 인식한다. (세팅가이드 참조)
+
+═══ 새 폰트를 들일 때 ═══
+1) uvx --from fonttools ttx -t name -o - <폰트> 로 nameID 0(저작권)·7(상표)·13(라이선스) 확인
+2) 위 세 필드가 비어 있으면 개조본을 의심하고 공식 배포처에서 원본을 받는다
+3) "무료"와 "상업적 이용 가능"은 다르다 — 영상 사용·수정·재배포 조항을 각각 확인
+
+═══════════════════════════════════════════════════════════
+후보 폰트 라이브러리 — assets/fonts/<분류>/   (39종)
+═══════════════════════════════════════════════════════════
+전부 상업적 이용에 조건이 붙지 않는다. 근거는 폰트 파일 name 테이블(nameID 13)에서
+직접 판독했고, OFL 원문은 assets/fonts/licenses/<dir>.txt 에 함께 보관한다.
+
+  OFL(SIL Open Font License 1.1) 39종 — 상업 이용·수정·재배포 O.
+    유일한 금지: 폰트 자체를 유료 판매 · Reserved Font Name 유지 의무.
+
+출처: Google Fonts 한글 서브셋 전 패밀리(38) + Pretendard(GitHub OFL)
+수집·검증 스크립트: scripts/prepare_fonts.py
+
+⚠️ ASS Style에 넣을 이름은 파일명이 아니라 아래 "ASS명"(타이포그래픽 패밀리명)이다.
+   가변폰트는 nameID 1이 기본 인스턴스명("Noto Sans KR Thin")으로 잡히므로 nameID 16을 쓴다.
+
+── 제목·자막 ──
+  Asta Sans                  ASS명 "Asta Sans"                 [OFL]
+  Bagel Fat One              ASS명 "Bagel Fat One"             [OFL]
+  Black Han Sans             ASS명 "Black Han Sans"            [OFL]
+  Do Hyeon                   ASS명 "Do Hyeon"                  [OFL]
+  Gasoek One                 ASS명 "Gasoek One"                [OFL]
+  Grandiflora One            ASS명 "Grandiflora One"           [OFL]
+  Gugi                       ASS명 "Gugi"                      [OFL]
+  Jua                        ASS명 "Jua"                       [OFL]
+  Moirai One                 ASS명 "Moirai One"                [OFL]
+  Orbit                      ASS명 "Orbit"                     [OFL]
+  Single Day                 ASS명 "Single Day"                [OFL]
+  Stylish                    ASS명 "Stylish"                   [OFL]
+
+── 본문·자막 ──
+  Dongle                     ASS명 "Dongle"                    [OFL]
+  Gothic A1                  ASS명 "Gothic A1"                 [OFL]
+  Gowun Dodum                ASS명 "Gowun Dodum"               [OFL]
+  IBM Plex Sans KR           ASS명 "IBM Plex Sans KR"          [OFL]
+  Nanum Gothic               ASS명 "NanumGothic"               [OFL(동봉)]
+  Noto Sans KR               ASS명 "Noto Sans KR"              [OFL]
+  Pretendard Black           ASS명 "Pretendard"                [OFL]
+  Sunflower                  ASS명 "Sunflower"                 [OFL]
+
+── 명조·감성 ──
+  Diphylleia                 ASS명 "Diphylleia"                [OFL]
+  Gowun Batang               ASS명 "Gowun Batang"              [OFL]
+  Hahmlet                    ASS명 "Hahmlet"                   [OFL]
+  Nanum Myeongjo             ASS명 "NanumMyeongjo"             [OFL(동봉)]
+  Noto Serif KR              ASS명 "Noto Serif KR"             [OFL]
+  Song Myung                 ASS명 "Song Myung"                [OFL]
+
+── 손글씨·개성 ──
+  Black And White Picture    ASS명 "Black And White Picture"   [OFL]
+  Cute Font                  ASS명 "Cute Font"                 [OFL]
+  Dokdo                      ASS명 "Dokdo"                     [OFL]
+  East Sea Dokdo             ASS명 "East Sea Dokdo"            [OFL]
+  Gaegu                      ASS명 "Gaegu"                     [OFL]
+  Gamja Flower               ASS명 "Gamja Flower"              [OFL]
+  Hi Melody                  ASS명 "Hi Melody"                 [OFL]
+  Kirang Haerang             ASS명 "Kirang Haerang"            [OFL]
+  Nanum Brush Script         ASS명 "Nanum Brush Script"        [OFL(동봉)]
+  Nanum Gothic Coding        ASS명 "NanumGothicCoding"         [OFL]
+  Nanum Pen Script           ASS명 "Nanum Pen"                 [OFL]
+  Poor Story                 ASS명 "Poor Story"                [OFL]
+  Yeon Sung                  ASS명 "Yeon Sung"                 [OFL]
